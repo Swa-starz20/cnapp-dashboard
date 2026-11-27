@@ -1,0 +1,122 @@
+{
+  "categories": [
+    {
+      "id": "cspm",
+      "name": "CSPM Executive Dashboard",
+      "tabKey": "CSPM",
+      "alwaysShow": true,
+      "widgets": [
+        {
+          "id": "cloud-accounts",
+          "name": "Cloud Accounts",
+          "type": "donut",
+          "checked": true,
+          "text": "Connected (2), Not Connected (2)",
+          "total": 2,
+          "totalLabel": "Total",
+          "segments": [
+            { "label": "Connected", "value": 2, "color": "#4C73FF" },
+            { "label": "Not Connected", "value": 2, "color": "#E1E8FF" }
+          ]
+        },
+        {
+          "id": "cloud-account-risk-assessment",
+          "name": "Cloud Account Risk Assessment",
+          "type": "donut",
+          "checked": true,
+          "text": "Failed (1689), Warning (681), Not available (36), Passed (7253)",
+          "total": 9659,
+          "totalLabel": "Total",
+          "segments": [
+            { "label": "Failed", "value": 1689, "color": "#B91C1C" },
+            { "label": "Warning", "value": 681, "color": "#EAB308" },
+            { "label": "Not available", "value": 36, "color": "#CBD5E1" },
+            { "label": "Passed", "value": 7253, "color": "#16A34A" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cwpp",
+      "name": "CWPP Dashboard:",
+      "tabKey": "CWPP",
+      "alwaysShow": true,
+      "widgets": [
+        {
+          "id": "top-5-namespace-alerts",
+          "name": "Top 5 Namespace Specific Alerts",
+          "type": "empty",
+          "checked": true,
+          "text": "No Graph data available!"
+        },
+        {
+          "id": "workload-alerts",
+          "name": "Workload Alerts",
+          "type": "empty",
+          "checked": true,
+          "text": "No Graph data available!"
+        }
+      ]
+    },
+    {
+      "id": "registry-scan",
+      "name": "Registry Scan",
+      "tabKey": "Image",
+      "alwaysShow": true,
+      "widgets": [
+        {
+          "id": "image-risk-assessment",
+          "name": "Image Risk Assessment",
+          "type": "progress",
+          "checked": true,
+          "text": "1470 Total Vulnerabilities: Critical (9), High (150), Medium (840), Low (471)",
+          "total": 1470,
+          "totalLabel": "Total Vulnerabilities",
+          "segments": [
+            { "label": "Critical", "value": 9, "color": "#7F1D1D" },
+            { "label": "High", "value": 150, "color": "#DC2626" },
+            { "label": "Medium", "value": 840, "color": "#F59E0B" },
+            { "label": "Low", "value": 471, "color": "#FDE047" }
+          ]
+        },
+        {
+          "id": "image-security-issues",
+          "name": "Image Security Issues",
+          "type": "progress",
+          "checked": true,
+          "text": "2 Total Images: Critical (2), High (2), Medium (0), Low (0)",
+          "total": 2,
+          "totalLabel": "Total Images",
+          "segments": [
+            { "label": "Critical", "value": 2, "color": "#7F1D1D" },
+            { "label": "High", "value": 2, "color": "#DC2626" },
+            { "label": "Medium", "value": 0, "color": "#F59E0B" },
+            { "label": "Low", "value": 0, "color": "#CBD5E1" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ticket",
+      "name": "Ticket",
+      "tabKey": "Ticket",
+      "alwaysShow": false,
+      "widgets": [
+        {
+          "id": "open-security-tickets",
+          "name": "Open Security Tickets",
+          "type": "text",
+          "checked": false,
+          "text": "14 open security remediation tickets assigned across cloud infrastructure teams."
+        },
+        {
+          "id": "sla-breached-tickets",
+          "name": "SLA Breached Tickets",
+          "type": "text",
+          "checked": false,
+          "text": "3 high-priority tickets have exceeded their 48-hour remediation SLA."
+        }
+      ]
+    }
+  ]
+}
